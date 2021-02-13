@@ -1,0 +1,107 @@
+.Container{
+    width: 99%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar{
+    width: 20%;
+    height: 100%;
+    border-right: 4px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    .input-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+
+        border-bottom: 4px solid black;
+        input{
+            margin: 12px 0 12px 0;
+            width: 90%;
+            height: 30px;
+            border: 1px solid black;
+            border-radius: 8px;
+            padding: 5px;
+        }
+    }
+
+    .names-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        font-size: 20px;
+
+        label {
+            margin-left: 10px;
+            margin-bottom: 5px;
+        }
+    }
+}
+
+.pokemon-content{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    .info{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+
+        .profile-container{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+
+            margin-left: 50%;
+
+            h3{
+                font-size: 40px;
+                font-weight: 300 ;
+            }
+        }
+
+        .attributes-container{
+            font-size: 30px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            padding: 10px;
+            margin-left: 5px;
+
+            div{
+                margin: 0 0 30px 0;
+
+            }
+
+            p{
+                margin: 0 0 10px 0;
+            }
+
+            li{
+                font-size: 20px;
+                margin-left: 40px;
+                list-style-type: circle;
+            }
+        }
+    }
+}

@@ -1,0 +1,42 @@
+
+<div class="Container">
+
+    <div class="sidebar">
+        <div class="input-container">
+            <input [ngModel]="inputValue" (ngModelChange)="handleSearchChange($event)" placeholder="Pesquisar..." type="text" name="pokemonSearch" id="pokemonSearch">
+        </div>
+
+        <div class="names-container" *ngIf="searchedPokemons">
+            <label *ngFor="let name of searchedPokemons">
+                {{name}}
+            </label>
+        </div>
+
+    </div>
+    <div class="pokemon-content">
+        <div class="info" *ngIf="pokemon">
+            <div class="profile-container">
+                <img src={{pokemon.sprites.front_default}}/>
+                <h3>{{pokemon.name}}</h3>
+            </div>
+
+            <div class="attributes-container">
+                <div>
+                    <p>Habilidades:</p>
+                    <li *ngFor="let data of pokemon.abilities">
+                        {{data.ability.name}}
+                    </li>
+                </div>
+    
+                <div>
+                    <p>Tipos:</p>
+                    <li *ngFor="let data of pokemon.types">
+                        {{data.type.name}}
+                    </li>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
